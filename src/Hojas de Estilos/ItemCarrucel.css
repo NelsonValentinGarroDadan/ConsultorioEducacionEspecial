@@ -1,0 +1,50 @@
+.item-carrucel{
+    background-image: url('../Imagenes//fondo-item-carrucel.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 250px;
+    transition: .7s all ease-out;
+    position: absolute;
+    transform: translate(0, 0) scale(0.4); 
+    z-index: 7;
+}
+.item-carrucel-titulo{
+    color: #292522;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+.item-carrucel-texto{
+    color: #292522;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0 20px;
+}
+.item-carrucel-actual,.item-carrucel-siguiente,.item-carrucel-anterior{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px; 
+    visibility: visible;
+}
+.item-carrucel-actual,.item-carrucel-siguiente,.item-carrucel-anterior{
+    transform: translate(0, 0) scale(1); 
+}
+.item-carrucel-actual{
+    z-index: 10;
+    box-shadow: 0 0 50px rgba(0,0,0,.7);
+}
+
+.item-carrucel-siguiente{
+   transform:rotateY(45deg) translate(200px, 0) scale(0.7); 
+   z-index: 9;
+}
+.item-carrucel-anterior{
+    transform:rotateY(-45deg) translate(-200px) scale(0.7);
+    z-index: 9;
+}

@@ -1,0 +1,31 @@
+
+.menu.laptop{
+    display: flex;
+    position: relative;  
+    flex-direction: row;
+    height: 100%;
+}
+.item-menu{
+    margin:0 5px;
+    padding: 10px;
+    cursor: pointer;
+    color: #ca0c47;
+    font-size: 1.5rem;
+    transition: .3s ease all;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    text-decoration: none;
+}
+.item-menu::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -3px;
+    height: .1rem;
+    transition: .3s ease all;
+}
+.item-menu:hover::after, .item-menu.activo::after{
+    background-color: #ca0c47;
+}

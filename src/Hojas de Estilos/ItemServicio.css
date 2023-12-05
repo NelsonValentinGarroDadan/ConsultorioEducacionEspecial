@@ -1,0 +1,13 @@
+.item-servicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffe29a;
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 20px;
+    line-height: 1.8;
+    min-height: 200px;
+}

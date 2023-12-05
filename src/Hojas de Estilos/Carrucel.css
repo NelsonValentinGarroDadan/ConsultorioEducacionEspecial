@@ -1,0 +1,27 @@
+.carrucel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    position: relative;
+    min-height: 500px;
+}
+.boton-anterior,.boton-siguiente{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+    background-color: #353634;
+    color: white;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.boton-anterior{
+    left: 20px;
+}
+.boton-siguiente{
+    right: 20px;
+}

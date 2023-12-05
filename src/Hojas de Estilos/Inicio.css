@@ -1,0 +1,58 @@
+.seccion-inicio{
+    padding: 10px;
+    height: 50vh;
+    background-color: #18181b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titulo-texto{
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: #fef1f7;
+}
+.eslogan-texto{
+    font-style: italic;
+    font-size: 20px;
+    color: #fef1f7;
+}
+.imagen-fondo{
+    position: fixed;
+    min-width: 100vh;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-image: url('../Imagenes/imagen-fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: alejarAcercar 15s infinite;
+}
+.boton-inicio{
+    cursor: pointer;
+    background-color: transparent;
+    padding: .3rem 2rem;
+    text-align: center;
+    color: #fef1f7;
+    border: 2px solid #fef1f7;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.boton-inicio:hover{
+    color: #ca0c47;
+    border: 2px solid #ca0c47;
+    transition: .2s all ease;
+    
+}
+@keyframes alejarAcercar {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2); 
+    }
+  }

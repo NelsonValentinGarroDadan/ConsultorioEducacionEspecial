@@ -1,0 +1,14 @@
+.seccion-experiencias{
+    height: 40vh;
+    padding: 20px 0;
+    background-color: #18181b;
+    margin-top: -5px;
+    width: 100%;
+}
+.seccion-experiencias-titulo{
+    text-align: center;
+    color: #fef1f7;
+    font-size: 35px;
+    padding: 0 0 10px 0;
+    font-family: 'Oswald', sans-serif;
+}

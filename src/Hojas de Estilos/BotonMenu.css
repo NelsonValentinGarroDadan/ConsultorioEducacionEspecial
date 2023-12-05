@@ -1,0 +1,35 @@
+.boton-menu{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.linea{
+    background-color: #ca0c47;
+    height: .3rem;
+    width: 100%;
+    border-radius: 10px;
+    transition: .3s ease all;
+}
+.boton-menu.activo{
+    position: relative;
+}
+.activo .linea-top{
+    rotate: 45deg;
+    position:absolute ;
+    
+}
+.activo .linea-mid{
+    display: none;
+}
+.activo .linea-bot{
+    rotate: -45deg;
+    position:absolute ;
+}

@@ -14,17 +14,22 @@ function Contacto(){
           });
       };
     return(
-        <section className="seccion-contacto">
-            <form ref={form} onSubmit={sendEmail}>
-                <label>Name</label>
-                <input type="text" name="user_name" />
-                <label>Email</label>
-                <input type="email" name="user_email" />
-                <label>Message</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" />
+        <footer className="seccion-contacto" id='contactanos'>
+            <form ref={form} onSubmit={sendEmail} className='formulario'>
+                <h1 className='seccion-contacto-titulo'>Contactanos !</h1>
+                <label className='item-formulario label-formulario'>Nombre</label>
+                <input className='item-formulario input-formulario' type="text" name="user_name" placeholder='Ingresa tu nombre'/>
+                <label className='item-formulario label-formulario'>Email</label>
+                <input className='item-formulario input-formulario' type="email" name="user_email" placeholder='Ingresa tu email'/>
+                <label className='item-formulario label-formulario'>Mensaje</label>
+                <textarea className='item-formulario input-formulario textarea-formulario' name="message" placeholder='Ingresa el mensaje que desees enviar'/>
+                <input className='item-formulario boton-enviar-formulario' type="submit" value="Enviar Mensaje" />
             </form>
-        </section>
+            <div className='contenedor-copyright'>
+                <p className="copyright-texto">© copyright 2024</p>
+            </div>
+            
+        </footer>
     );
 }
 export default Contacto;

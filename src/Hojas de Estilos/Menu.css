@@ -14,3 +14,14 @@
     background-color: rgba(255, 255, 255, 0.747);
     backdrop-filter: blur(10px);
 }
+
+.menu.laptop{
+    display: flex;
+    position: relative;  
+    flex-direction: row;
+    top:35px;
+    transition: all .3s ease;
+}
+.fondo-blanco .menu.laptop{
+    top: 0;
+}

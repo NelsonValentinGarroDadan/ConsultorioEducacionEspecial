@@ -23,10 +23,10 @@ function Encabezado(){
         };
     }, []);
     return(
-        <div className={scrolling&&!BotonActivo? "cabecera fondo-blanco": "cabecera"}>
+        <section className={scrolling&&!BotonActivo? "cabecera fondo-blanco": "cabecera"}>
             <Menu activo={BotonActivo} setBotonActivo={setBotonActivo}/>
             <BotonMenu activo={BotonActivo} setBotonActivo={setBotonActivo}/>
-        </div>
+        </section>
     );
 };
 export default Encabezado;

@@ -1,10 +1,3 @@
-
-.menu.laptop{
-    display: flex;
-    position: relative;  
-    flex-direction: row;
-    height: 100%;
-}
 .item-menu{
     margin:0 5px;
     padding: 10px;
@@ -28,4 +21,8 @@
 }
 .item-menu:hover::after, .item-menu.activo::after{
     background-color: #ca0c47;
+}
+/*Laptop*/
+.item-menu.laptop{
+    font-size: 1.8rem; 
 }

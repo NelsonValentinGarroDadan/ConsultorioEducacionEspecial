@@ -1,5 +1,95 @@
 .seccion-contacto{
     margin-top: 30vh;
-    height: 100vh;
-    background-color: red;
+    background-image: url('../Imagenes/fondo-contacto.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-contacto-titulo{
+        text-align: center;
+        color: #18181b;
+        font-size: 35px;
+        padding: 0 0 10px 0;
+        font-family: 'Oswald', sans-serif;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    width: 80%;
+}
+.item-formulario {
+    width: 100%;
+}
+.label-formulario{
+    color: #18181b;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.input-formulario{
+    color: #18181b;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+    margin: 0 20px;
+    background-color: rgba(255, 255, 255, 0.578);
+    border: 1px #fa6900 solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+.input-formulario:focus{
+    border: 1px #fa6900 solid;
+    background-color: white;
+    outline: none;
+}
+.textarea-formulario{
+    height: 200px;
+    width: 100%;
+}
+.boton-enviar-formulario{
+    width: 100%;
+    color: #fa6900;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.578);
+    border: 1px solid #fa6900;
+    height: 3rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+    animation: titilar 2s infinite;
+}
+.boton-enviar-formulario:hover{
+    background-color: #fa6900;
+    color: white;
+}
+@keyframes titilar {
+    0%, 100% {
+        box-shadow:  0 0 2px white;
+    }
+    50% {
+        box-shadow:  0 0 2px #fa6900;
+    }
+  }
+.contenedor-copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.copyright-texto{
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
 }

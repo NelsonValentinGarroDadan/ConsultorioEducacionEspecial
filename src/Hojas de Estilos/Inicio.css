@@ -20,10 +20,8 @@
 }
 .imagen-fondo{
     position: fixed;
-    min-width: 100vh;
-    min-height: 100vh;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
     background-image: url('../Imagenes/imagen-fondo.jpg');
@@ -36,17 +34,16 @@
     background-color: transparent;
     padding: .3rem 2rem;
     text-align: center;
-    color: #fef1f7;
-    border: 2px solid #fef1f7;
+    color: #ca0c47;
+    border: 2px solid #ca0c47;
     border-radius: 20px;
     font-size: 18px;
     margin-top: 30px;
+    transition: .2s all ease;
 }
 .boton-inicio:hover{
-    color: #ca0c47;
-    border: 2px solid #ca0c47;
-    transition: .2s all ease;
-    
+    color: #fef1f7;
+    border: 2px solid #fef1f7;
 }
 @keyframes alejarAcercar {
     0%, 100% {
@@ -54,5 +51,20 @@
     }
     50% {
       transform: scale(1.2); 
+    }
+  }
+  /*responsive*/
+  @media (min-width: 768px) {
+    .seccion-inicio{
+        height: 70vh;;
+    }
+    .titulo-texto{
+        font-size: 6rem;
+    }
+    .eslogan-texto{
+        font-size: 25px;
+    }
+    .boton-inicio{
+
     }
   }

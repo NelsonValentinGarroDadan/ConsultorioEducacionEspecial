@@ -20,9 +20,9 @@ function Menu({ activo , setBotonActivo}){
             { Nombre: "Experiencias", Activo: false },
             { Nombre: "Contactanos", Activo: false }
           ]);
-        const handleLinkClick = (linkIndex) => {
-            const actualizarLinks = links.map((link, index) => {
-              if (index === linkIndex) {
+        const handleLinkClick = (linkNombre) => {
+            const actualizarLinks = links.map((link) => {
+              if (link.Nombre === linkNombre) {
                 return { ...link, Activo: true };
               } else {
                 return { ...link, Activo: false };
@@ -31,11 +31,11 @@ function Menu({ activo , setBotonActivo}){
         
             setLinks(actualizarLinks);
         };
-        const scrollLink = (Id) =>{
+        const scrollLink = (Id, linkNombre) =>{
           const seccion = document.getElementById(Id);
           if(seccion){
             seccion.scrollIntoView({ behavior: 'smooth' })
-            handleLinkClick();
+            handleLinkClick(linkNombre);
             if(isMobile){
               setBotonActivo(!activo);
             }

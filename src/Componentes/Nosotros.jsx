@@ -1,6 +1,7 @@
 import React from "react";
 import '../Hojas de Estilos/Nosotros.css';
 function Nosotros(){
+    //
     return(
         <section id="sobre-nosotros" className="seccion-nosotros">
             <h1 className="seccion-nosotros-titulo" >Sobre nosotros</h1>

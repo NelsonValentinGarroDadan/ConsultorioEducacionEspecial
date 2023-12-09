@@ -22,7 +22,16 @@
 .item-menu:hover::after, .item-menu.activo::after{
     background-color: #ca0c47;
 }
-/*Laptop*/
-.item-menu.laptop{
-    font-size: 1.8rem; 
+/*Media Querires*/
+@media (min-width: 480px) {
+    .item-menu{
+        font-size: 2rem;
+        margin:5px 9px;
+    }
+}
+@media (min-width: 1024px) {
+    .item-menu{
+        font-size: 1.2rem;
+        margin: 0;
+    }
 }

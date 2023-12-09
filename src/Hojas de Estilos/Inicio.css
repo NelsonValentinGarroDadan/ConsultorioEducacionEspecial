@@ -34,10 +34,11 @@
     background-color: transparent;
     padding: .3rem 2rem;
     text-align: center;
+    text-decoration: none;
     color: #ca0c47;
     border: 2px solid #ca0c47;
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 30px;
     transition: .2s all ease;
 }
@@ -53,18 +54,46 @@
       transform: scale(1.2); 
     }
   }
-  /*responsive*/
-  @media (min-width: 768px) {
+/*Media Querires*/
+@media (min-width: 480px) {
     .seccion-inicio{
-        height: 70vh;;
+        height: 60vh;;
+    }
+    .titulo-texto{
+        font-size: 4rem;
+    }
+    .eslogan-texto{
+        font-size: 30px;
+    }
+    .boton-inicio{
+        font-size: 26px;
+    }
+}
+@media (min-width: 768px) {
+    .seccion-inicio{
+        height: 80vh;;
     }
     .titulo-texto{
         font-size: 6rem;
     }
     .eslogan-texto{
+        font-size: 30px;
+    }
+    .boton-inicio{
+        font-size: 24px;
+    }
+}
+@media (min-width: 1024px) {
+    .seccion-inicio{
+        height: 80vh;;
+    }
+    .titulo-texto{
+        font-size: 4rem;
+    }
+    .eslogan-texto{
         font-size: 25px;
     }
     .boton-inicio{
-
+        font-size: 20px;
     }
-  }
+}

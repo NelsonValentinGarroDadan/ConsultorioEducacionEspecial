@@ -19,3 +19,27 @@
     line-height: 1.8;
     padding: 0 20px;
 }
+/*Mediea Queries*/
+@media (min-width: 480px) {
+    .seccion-nosotros-titulo{
+        font-size: 45px;
+    }
+    .seccion-nosotros-texto{
+        font-size: 25px;
+        line-height: 2.3;
+    }    
+}
+@media (min-width: 1024px) {
+    .seccion-nosotros{
+        padding: 10px 0;
+    }
+    .seccion-nosotros-titulo{
+        font-size: 30px;
+        
+    }
+    .seccion-nosotros-texto{
+        font-size: 16px;
+        line-height: 1.9;
+        padding: 0 80px;
+    }  
+}

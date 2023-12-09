@@ -1,5 +1,5 @@
 .seccion-contacto{
-    margin-top: 30vh;
+    margin-top: 10vh;
     background-image: url('../Imagenes/fondo-contacto.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -92,4 +92,46 @@
     color: white;
     font-family: sans-serif;
     font-size: 14px;
+}
+/*Media Queries*/
+@media (min-width: 768px) {
+    .seccion-contacto{  
+        margin-top: 30vh;
+    }
+    .seccion-contacto-titulo{
+        font-size: 45px;
+    }
+    .formulario{
+        padding: 50px;
+    }
+    .label-formulario{
+        font-size: 30px;
+    }
+    .input-formulario{
+        font-size: 30px;
+    }
+    .boton-enviar-formulario{
+        width: 30rem;
+    }
+}
+@media (min-width: 1024px) {
+    .seccion-contacto{  
+        margin-top: 500px;
+    }
+    .seccion-contacto-titulo{
+        font-size: 35px;
+    }
+    .formulario{
+        width: 500px;
+    }
+    .label-formulario{
+        font-size: 20px;
+    }
+    .input-formulario{
+        font-size: 20px;
+    }
+    .boton-enviar-formulario{
+        width: 15rem;
+        font-size: 20px;
+    }
 }

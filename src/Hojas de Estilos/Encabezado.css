@@ -12,3 +12,16 @@
 .fondo-blanco{
     background-color: rgba(255, 255, 255, 0.747);
 }
+/*Mediea Queries*/
+@media (min-width: 480px) {
+    
+}
+@media (min-width: 768px) {
+    
+}
+@media (min-width: 1024px) {
+    
+}
+@media (min-width: 1200px) {
+    
+}

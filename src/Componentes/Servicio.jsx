@@ -10,7 +10,6 @@ function Servicios(){
                     {texto: "Proporcionar un lugar donde los chicos, a través de distintas actividades puedan liberar tension", color:"#5f0d3b"}]
     return (
         <section className="seccion-servicios" id="que-ofrecemos">
-            <h1 className="servicios-titulo">Que Ofrecemos</h1>
             <div className="cards-servicios">
                 {Items.map((item,index)=>{
                     return(<ItemServicio key={index}

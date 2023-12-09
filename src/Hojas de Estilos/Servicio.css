@@ -1,12 +1,5 @@
 .seccion-servicios{
-    margin-top: 20vh;
-    width: 100%;
-}
-.servicios-titulo{
-    text-align: center;
-    color: #fef1f7;
-    font-size: 35px;
-    font-family: 'Oswald', sans-serif;
+    margin-top: 10vh;
 }
 .cards-servicios{
     display: grid;
@@ -30,4 +23,32 @@
     font-family: 'Hedvig Letters Sans', sans-serif;
     line-height: 1.8;
    
+}
+/*Mediea Queries*/
+@media (min-width: 480px) {
+    .seccion-servicios{
+        margin: 0;
+    }
+    .dirigido-servicios-texto{
+        font-size: 25px;
+    }
+}
+@media (min-width: 768px) {
+    .dirigido-servicios-texto{
+        font-size: 20px;
+    }
+}
+@media (min-width: 1024px) {
+    .seccion-servicios{
+        margin-top: 10vh;
+    }
+    .cards-servicios{
+        padding: 0 80px;
+        margin-bottom: 10vh;
+    }
+    .dirigido-servicios-texto{
+        font-size: 18px;
+        padding: 0 80px;
+       
+    }
 }

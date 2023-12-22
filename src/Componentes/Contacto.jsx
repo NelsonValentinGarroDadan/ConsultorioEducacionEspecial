@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import '../Hojas de Estilos/Contacto.css';
+import {servicioId,templateId,publicKey} from '../config';
 
 function Contacto() {
   const form = useRef();
@@ -39,7 +40,7 @@ function Contacto() {
     });
 
     if (nombreValido && mailValido && mensajeValido) {
-      emailjs.sendForm('service_83ah46g', 'template_d30o58f', form.current, 'YlUpGvdEXIUleFLci')
+      emailjs.sendForm(servicioId, templateId, form.current, publicKey)
         .then((result) => {
           setMensajeEnviado(true)
           console.log(result.text);

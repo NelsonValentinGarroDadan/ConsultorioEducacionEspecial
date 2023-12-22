@@ -7,7 +7,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 .seccion-contacto-titulo{
         text-align: center;
@@ -55,7 +56,7 @@
     height: 200px;
     width: 100%;
 }
-.boton-enviar-formulario{
+.boton-enviar-formulario, .boton-enviar-formulario:active{
     width: 100%;
     color: #fa6900;
     text-align: center;
@@ -69,8 +70,55 @@
     border-radius: 10px;
     transition: all 0.3s;
     animation: titilar 2s infinite;
+    cursor: pointer;
+    margin: 10px 0;
 }
 .boton-enviar-formulario:hover{
+    background-color: #fa6900;
+    color: white;
+}
+.alerta-formulario{
+    color: transparent;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Cabin', sans-serif;
+}
+.alerta-formulario-activa{
+    color: red;
+}
+.contenedor-mensaje-enviado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+.texto-mensaje-enviado{
+    color: #18181b;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.boton-enviar-otromensaje, .boton-enviar-otromensaje:active{
+    width: 100%;
+    color: #fa6900;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.578);
+    border: 1px solid #fa6900;
+    height: 3rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+    animation: titilar 2s infinite;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.boton-enviar-otromensaje:hover{
     background-color: #fa6900;
     color: white;
 }
@@ -113,16 +161,21 @@
     .boton-enviar-formulario{
         width: 30rem;
     }
+    .boton-enviar-otromensaje{
+        width: 30rem;
+    }
 }
 @media (min-width: 1024px) {
     .seccion-contacto{  
         margin-top: 500px;
+        padding: 0;
     }
     .seccion-contacto-titulo{
         font-size: 35px;
     }
     .formulario{
         width: 500px;
+        padding: 30px 0 0 0;
     }
     .label-formulario{
         font-size: 20px;
@@ -130,8 +183,13 @@
     .input-formulario{
         font-size: 20px;
     }
-    .boton-enviar-formulario{
+    .boton-enviar-formulario, .boton-enviar-formulario:active,.boton-enviar-otromensaje, .boton-enviar-otromensaje:active{
         width: 15rem;
         font-size: 20px;
+    }
+    .boton-enviar-formulario:active ,.boton-enviar-otromensaje:hover{
+        color: #fa6900;
+        background-color: rgba(255, 255, 255, 0.578);
+        border: 1px solid #fa6900;
     }
 }

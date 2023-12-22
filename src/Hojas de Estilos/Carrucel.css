@@ -58,7 +58,7 @@
 }
 @media (min-width: 1024px) {
     .carrucel{
-        margin-top: 7rem;
+        margin-top: 1rem;
     }
     .boton-anterior,.boton-siguiente{
         height: 30px;

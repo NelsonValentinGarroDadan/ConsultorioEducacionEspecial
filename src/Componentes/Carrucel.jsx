@@ -1,4 +1,4 @@
-import {React , useState , useEffect}from "react";
+import {React , useState , useEffect, useCallback}from "react";
 import '../Hojas de Estilos/Carrucel.css'
 import ItemCarrucel from "./ItemCarrucel";
 function Carrucel(){
@@ -33,32 +33,36 @@ function Carrucel(){
     const [cardActual , setcardActual]  = useState(1);
     const [cardAnterior , setcardAnterior] = useState(0);
     const [cardSiguiente , setcardSiguiente] = useState(2);
-    const siguienteCard = ()=>{
+    
+    const siguienteCard = useCallback(() => {
         setcardAnterior(cardActual);
         setcardActual(cardSiguiente);
-        if(cardSiguiente + 1 < Experiencias.length){
-            setcardSiguiente(cardSiguiente+1);
-        }else{
+        if (cardSiguiente + 1 < Experiencias.length) {
+            setcardSiguiente(cardSiguiente + 1);
+        } else {
             setcardSiguiente(0)
         }
-
-    }
-    const anteriorCard = ()=>{
+    }, [cardActual, cardSiguiente, Experiencias.length]);
+    
+    const anteriorCard = useCallback(() => {
         setcardSiguiente(cardActual);
         setcardActual(cardAnterior);
-        if(cardAnterior - 1 > -1){
-            setcardAnterior(cardAnterior-1);
-        }else{
-            setcardAnterior(Experiencias.length-1); 
+        if (cardAnterior - 1 > -1) {
+            setcardAnterior(cardAnterior - 1);
+        } else {
+            setcardAnterior(Experiencias.length - 1);
         }
-    }
+    }, [cardActual, cardAnterior, Experiencias.length]);
+    
+    
+    // eslint-disable-next-line
     useEffect(() => {
         const intervalId = setInterval(() => {
           siguienteCard();
         }, 10000);
     
         return () => clearInterval(intervalId); 
-      }, [cardActual]);
+      }, [cardActual, siguienteCard]);
     return(
         <>
             <div className="carrucel">

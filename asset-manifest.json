@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ConsultorioEducacionEspecial/static/css/main.94c96743.css",
-    "main.js": "/ConsultorioEducacionEspecial/static/js/main.3592483a.js",
+    "main.css": "/ConsultorioEducacionEspecial/static/css/main.7512e99b.css",
+    "main.js": "/ConsultorioEducacionEspecial/static/js/main.85d3b95e.js",
     "static/media/imagen-fondo.jpg": "/ConsultorioEducacionEspecial/static/media/imagen-fondo.44958a17a55ad150a300.jpg",
     "static/media/fondo-contacto.jpg": "/ConsultorioEducacionEspecial/static/media/fondo-contacto.e8a26318554b8a43c56e.jpg",
     "index.html": "/ConsultorioEducacionEspecial/index.html",
-    "main.94c96743.css.map": "/ConsultorioEducacionEspecial/static/css/main.94c96743.css.map",
-    "main.3592483a.js.map": "/ConsultorioEducacionEspecial/static/js/main.3592483a.js.map"
+    "main.7512e99b.css.map": "/ConsultorioEducacionEspecial/static/css/main.7512e99b.css.map",
+    "main.85d3b95e.js.map": "/ConsultorioEducacionEspecial/static/js/main.85d3b95e.js.map"
   },
   "entrypoints": [
-    "static/css/main.94c96743.css",
-    "static/js/main.3592483a.js"
+    "static/css/main.7512e99b.css",
+    "static/js/main.85d3b95e.js"
   ]
 }

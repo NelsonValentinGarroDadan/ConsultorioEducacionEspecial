@@ -1,3 +1,3 @@
-export const servicioId = 'service_83ah46g';
-export const templateId = 'template_d30o58f';
-export const publicKey = 'YlUpGvdEXIUleFLci';
+export const servicioId = 'service_5yancoo';
+export const templateId = 'template_6kw1lhl';
+export const publicKey = 'KdJ5eT7rkHHad_QoB';

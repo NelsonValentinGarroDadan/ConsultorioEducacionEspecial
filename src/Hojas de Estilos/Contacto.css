@@ -82,9 +82,11 @@
     text-align: left;
     font-size: 15px;
     font-family: 'Cabin', sans-serif;
+    margin-top: 5px;
 }
 .alerta-formulario-activa{
     color: red;
+    margin-top: 5px;
 }
 .contenedor-mensaje-enviado{
     display: flex;

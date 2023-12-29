@@ -13,11 +13,12 @@
     "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
     "react-google-recaptcha": "^3.1.0",
+    "react-loader-spinner": "^6.1.6",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy" : "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
